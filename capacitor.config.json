@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Comments-Viewer",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

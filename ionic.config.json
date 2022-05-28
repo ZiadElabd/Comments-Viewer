@@ -1,0 +1,7 @@
+{
+  "name": "Comments-Viewer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
