@@ -14,12 +14,17 @@ export class CommentService{
   comments: Observable<Comment[]>;
 
   constructor(public afs: AngularFirestore){
-    this.comments = this.afs.collection('comments').valueChanges();
+
+    this.commentsCollection = this.afs.collection('comments');
+    this.comments = this.commentsCollection.valueChanges();
+  }
+
+  addComment(comment: Comment){
+    this.commentsCollection.add(comment);
   }
 
 
   getComments(){
-    console.log(this.comments);
     return this.comments;
   }
 

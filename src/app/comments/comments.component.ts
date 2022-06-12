@@ -21,7 +21,7 @@ export class CommentsComponent implements OnInit {
   }
 
   getTime(timestamp){
-    var date = new Date(timestamp.seconds*1000);
+    var date = new Date(Number(timestamp));
 
     let res = "Date: "+date.getDate() +
             "/"+(date.getMonth()+1)+
