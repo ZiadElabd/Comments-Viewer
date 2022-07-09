@@ -1,11 +1,14 @@
 
 <ion-list>
-  <ion-item *ngFor="let comment of comments">
-    <ion-label class="ion-text-wrap">
-      <h2> {{ comment.content }} </h2>
-      <p class="date">{{ getTime(comment.time) }}</p>
-    </ion-label>
-  </ion-item>
+
+  <ion-card *ngFor="let comment of comments">
+    <ion-item>
+      <ion-label class="ion-text-wrap">
+        <h2 > {{ comment.content }} </h2>
+        <p class="date">{{ getTime(comment.time) }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
 </ion-list>
 
 
