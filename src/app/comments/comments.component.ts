@@ -9,7 +9,7 @@ import { Comment } from '../models/Commet';
 })
 export class CommentsComponent implements OnInit {
 
-  comments: Comment[];
+  comments: Comment[] = [];
 
   constructor(private service: CommentService) { }
 

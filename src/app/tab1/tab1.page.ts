@@ -16,12 +16,14 @@ export class Tab1Page implements OnInit{
 
 
   addComment(){
-    console.log('comment added');
+    console.log('comment saved');
     //console.log(this.text);
     this.service.addComment({
       content: this.text,
       time: '' + Date.now()
     });
+
+    this.text = '';
   }
 
 }

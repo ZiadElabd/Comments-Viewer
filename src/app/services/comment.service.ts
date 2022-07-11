@@ -15,7 +15,7 @@ export class CommentService{
 
   constructor(public afs: AngularFirestore){
 
-    this.commentsCollection = this.afs.collection('comments');
+    this.commentsCollection = this.afs.collection('comments', ref => ref.orderBy('time', 'desc'));
     this.comments = this.commentsCollection.valueChanges();
   }
 

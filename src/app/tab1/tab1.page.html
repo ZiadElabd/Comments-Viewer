@@ -1,20 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Write A Comment
+      Write
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="false">
   <div collapse="condense">
-    <ion-card class="commentbutton">
+    <ion-card class="form">
       <ion-item>
-        <ion-label position="stacked" size="large">Stacked Label</ion-label>
-        <ion-textarea auto-grow="true" placeholder="Enter more information here..." [(ngModel)]="text"></ion-textarea>
+        <ion-label position="stacked" size="large" class="label" >Write A Comment:</ion-label>
+        <ion-textarea rows="6" auto-grow="true" placeholder="What's on your mind?" [(ngModel)]="text"  class="textArea"></ion-textarea>
       </ion-item>
 
-      <ion-button expand="block" (click)="addComment()">Block Button</ion-button>
+      <ion-button expand="block" (click)="addComment()" class="commentbutton">Comment</ion-button>
   </ion-card>
   </div>
 
